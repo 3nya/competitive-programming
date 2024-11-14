@@ -1,12 +1,7 @@
----
-id: modular arithmetic
-aliases: 
-date: 2024-10-25
----
 # modular arithmetic
-tags: 
 
 ---
+
 ### basic concept
 *modular multiplicative inverse* -> inverse of a number $a$ is $a^{-1}$ such that $a*a^{-1} \bmod m = 1$
 
@@ -18,8 +13,8 @@ therefore, when $m$ is prime, $a^{m-2} \bmod m$ is the modular multiplicative in
 
 ### implementation
 
-calculating $a^{m-2}$ can be slow -- O(n) time
-using a smarter exponentiation algo can make it O(log n)
+calculating $a^{m-2}$ can be slow -- $O(n)$ time
+using a smarter exponentiation algo can make it $O(log n)$
 
 ```cpp
 // recursive implementation
@@ -32,7 +27,3 @@ function pow_mod(x, n, m):
         return t · t · x  mod m
     }
 ```
-
----
-### references:
-[[cp]]
