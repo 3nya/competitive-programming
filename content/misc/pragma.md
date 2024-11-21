@@ -16,6 +16,8 @@ More aggressive
 #pragma GCC target("avx2")
 ```
 
+---
+
 ### pragma GCC optimize
 
 ```cpp
