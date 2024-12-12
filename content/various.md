@@ -3,7 +3,8 @@
 ---
 
 ### fast ceiling division:
-`q = 1 + ((x - 1) / y)` where `q = ceil(x/y)`
+`q = 1 + ((x - 1) / y)` where `q = ceil(x/y)` -- only works for unsigned math
+also consider `q = x / y + (x % y != 0)`
 
 ### `set` vs `unordered_set`
 - `set`s are usually implemented as trees under the hood
