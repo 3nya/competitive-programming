@@ -7,8 +7,8 @@
 also consider `q = x / y + (x % y != 0)`
 
 ### `set` vs `unordered_set`
-- `set`s are usually implemented as trees under the hood
-- `unordered_set`s actually use hashing
+- `set`'s are usually implemented as trees under the hood
+- `unordered_set`'s actually use hashing
 - default `unordered_set` tends be really slow, we can solve this by
 
 ```cpp
