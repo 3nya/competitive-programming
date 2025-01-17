@@ -4,6 +4,7 @@
 using namespace std;
 
 #define all(x) begin(x), end(x)
+#define mp(x, y) make_pair(x, y)
 typedef long long ll;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
