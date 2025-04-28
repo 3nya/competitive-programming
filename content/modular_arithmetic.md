@@ -22,12 +22,14 @@ using a smarter exponentiation algo can make it $O(log n)$
 
 ```cpp
 // recursive implementation
-function pow_mod(x, n, m):
-    if (n = 0) { return 1; }
-    t := pow_mod(x, n/2, m);
-    if n % 2 == 0 {
-        return t · t  mod m
-    } else {
-        return t · t · x  mod m
-    }
+// computes x^n mod m
+ll pow_mod(ll x, ll n, ll m) {
+    if (n == 0)
+        return 1;
+    ll t = pow_mod(x, n/2, m);
+    if (n % 2 == 0)
+        return (t * t) % m;
+    else
+        return (((t * t) % m) * x) % m;
+}
 ```
